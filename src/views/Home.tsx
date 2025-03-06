@@ -1,4 +1,5 @@
 import Banner from "../components/Banner";
+import ServicesTabs from "../components/ServicesTabs";
 import Slider from "../components/Slider";
 
 const Home = () => {
@@ -9,6 +10,9 @@ const Home = () => {
       </div>
       <div className="max-w-7xl mt-10 h-full w-full flex flex-col md:flex-row items-center gap-8">
         <Slider />
+      </div>
+      <div className="max-w-7xl mt-10 h-full w-full flex flex-col md:flex-row items-center gap-8">
+        <ServicesTabs />
       </div>
     </div>
   );
