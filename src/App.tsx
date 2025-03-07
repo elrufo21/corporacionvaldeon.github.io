@@ -9,12 +9,13 @@ import BackgroundLights from "./components/BackgroundLights";
 function App() {
   return (
     <BrowserRouter>
-      <div className="relative w-full min-h-screen flex flex-col bg-black text-white">
+      <BackgroundLights />
+
+      <div className="relative w-full min-h-screen flex flex-col  text-white">
         <NavBar />
 
-        {/* Contenido Principal sin altura forzada */}
+        {/* Contenido Principal sin el BackgroundLights */}
         <main className="flex-grow relative px-4">
-          <BackgroundLights />
           <Routes>
             <Route path="/" element={<Home />} />
           </Routes>

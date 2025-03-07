@@ -5,19 +5,30 @@ import Slider from "../components/Slider";
 
 const Home = () => {
   return (
-    <div className="w-full flex flex-col items-center  px-6 py-12">
-      <div className="max-w-7xl w-full flex flex-col md:flex-row items-center gap-8">
-        <Banner />
-      </div>
-      <div className="max-w-7xl mt-10 h-full w-full flex flex-col md:flex-row items-center gap-8">
-        <Slider />
-      </div>
-      <div className="max-w-7xl mt-10 h-full w-full flex flex-col md:flex-row items-center gap-8">
-        <ServicesTabs />
-      </div>
-      <div className="max-w-7xl mt-10 h-full w-full flex flex-col md:flex-row items-center gap-8">
-        <PricingCards />
-      </div>
+    <div className="w-full flex flex-col items-center">
+      {/* Banner Section */}
+      <section className="w-full py-12 px-6">
+        <div className="max-w-7xl mx-auto">
+          <Banner />
+        </div>
+      </section>
+
+      {/* Slider Section */}
+      <section className="w-full py-12  backdrop-filter backdrop-blur-sm">
+        <div className="max-w-7xl mx-auto px-6">
+          <Slider />
+        </div>
+      </section>
+
+      {/* Services Section - Usar el componente directamente */}
+      <ServicesTabs />
+
+      {/* Pricing Section */}
+      <section className="w-full py-16 px-6">
+        <div className="max-w-7xl mx-auto">
+          <PricingCards />
+        </div>
+      </section>
     </div>
   );
 };
